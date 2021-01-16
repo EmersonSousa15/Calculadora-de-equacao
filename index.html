@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+   <h1>Calculadora de Raiz do 2° Grau</h1>
+  </header>
+  <section>
+    <p>Digite os valores da equação:</p>
+    <img src="explicacao.png" alt="exemplo" id="exemplo"/>
+    <div id="numbers">
+      A: <input type="number" id="txtn1" onfocus="limpar()"/>
+      B: <input type="number" id="txtn2"/>
+      C: <input type="number" id="txtn3"/>
+      <button class="calc" onclick="calc()">Calcular</button>
+      <button class="calc" onclick="explicacao()">Explicação</button><br>
+    </div>
+    <div id="res">
+      
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>

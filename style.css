@@ -1,0 +1,54 @@
+body {
+    font-size: 15pt;
+    background: blue;
+}
+h1 {
+  text-align: center;
+  font-size: 18pt;
+  color: white;
+  font-family: arial;
+}
+
+section {
+  margin: auto;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+}
+p {
+  text-align: center;
+  font: Arial;
+}
+#exemplo {
+  display: block;
+  margin: 8px auto;
+  width: 200px;
+}
+#numbers{
+  margin-left: 30px;
+  display: inline;
+}
+#numbers, input {
+  width: 50px;
+}
+.calc {
+  display: inline;
+  margin: 10px 0px 10px 32px;
+  width: 100px;
+  background: greenyellow;
+  border: none;
+  border-radius: 3px;
+}
+.limpar {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    background: greenyellow;
+    border: none;
+    border-radius: 3px;
+}
+button:hover {
+  border-top: solid 2px #B0B0B0D4;
+  border-right: solid 2px #B0B0B0D4;
+  background: #6FE037;
+}
