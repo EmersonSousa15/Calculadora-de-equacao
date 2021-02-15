@@ -53,24 +53,30 @@ function explicacao() {
     ${-n.b} +- &radic;${valor.d}<br>
    X = ----------------------<br>
    2 * ${n.a}<br><strong> &darr; </strong><br>
-    ${-n.b} +- ${valor.rD}<br>
+
+    ${-n.b} +- ${valor.rD.toFixed(2)}<br>
    X = ----------------------<br>
     ${nBaskara.mult2}<br> <strong> &darr; </strong> <br>
-   ${-n.b} + ${valor.rD}<br>
+
+   ${-n.b} + ${valor.rD.toFixed(2)}<br>
    X' = ----------------------<br>
     ${nBaskara.mult2}<br> <strong> &darr; </strong> <br>
-  ${nBaskara.soma}<br>
-   X' = -------------- = ${nBaskara.soma / nBaskara.mult2}<br>
+
+  ${nBaskara.soma.toFixed(2)}<br>
+   X' = -------------- = ${nBaskara.soma.toFixed(2) / nBaskara.mult2.toFixed(2)}<br>
     ${nBaskara.mult2}<br> <strong> &darr; </strong> <br> 
-      ${-n.b} - ${valor.rD}<br>
+
+      ${-n.b} - ${valor.rD.toFixed(2)}<br>
    X" = ----------------------<br>
     ${nBaskara.mult2}<br> <strong> &darr; </strong> <br>
-      ${nBaskara.subt}<br>
+
+      ${nBaskara.subt.toFixed(2)}<br>
    X" = ----------------------<br>
     ${nBaskara.mult2}<br> <strong> &darr; </strong> <br>
-    ${nBaskara.subt} <br>
-   X" = -------------- = ${nBaskara.subt / nBaskara.mult2.toFixed(2)}<br>
-    ${nBaskara.mult2.toFixed(2)}<br>`
+
+    ${nBaskara.subt.toFixed(2)} <br>
+   X" = -------------- = ${nBaskara.subt.toFixed(2) / nBaskara.mult2.toFixed(2)}<br>
+    ${nBaskara.mult2}<br>`
     res.appendChild(explic)
     } else {
       explic.innerHTML += '<p>Número negativo não tem raiz</p>'
