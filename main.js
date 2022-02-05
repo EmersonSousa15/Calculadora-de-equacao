@@ -47,7 +47,7 @@ function explicacao() {
     &Delta; = ${n.b**2} -4 × ${n.a} × ${n.c}<br> 
     &Delta; = ${n.b**2} ${nBaskara.mult} × ${n.c}<br> 
     &Delta; = ${n.b**2} ${nBaskara.mult * n.c}<br> &Delta; = ${valor.d}<br>`
-    if (valor.d > 0) {
+    if (valor.d > 0 && Number.isInteger(valor.d)) {
     explic.innerHTML += `<h3>Explicação Baskara</h3> 
     <strong> -b +- &radic;&Delta;</strong><br> <strong>X = ------------------------</strong><br> <strong>2a<br> &darr; </strong> <br>
     ${-n.b} +- &radic;${valor.d}<br>
@@ -79,7 +79,7 @@ function explicacao() {
     ${nBaskara.mult2}<br>`
     res.appendChild(explic)
     } else {
-      explic.innerHTML += '<p>Número negativo não tem raiz</p>'
+      explic.innerHTML += '<p>O resultado de delta não tem raiz</p>'
     }
   }
 }
